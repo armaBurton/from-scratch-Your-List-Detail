@@ -1,11 +1,14 @@
-import { useState } from 'react';
+import CharacterCard from '../CharacterCard/CharacterCard';
 
 export default function CharactersPage(props){
-  console.log(props.characters);
 
-  const [page, setpage] = useState(1);
-
-  return <>
-    <h2>Page {page}</h2>
-  </>;
+  return (
+    <section className='the-great-hall-of-the-justice-league'>
+      <div className='display-case'>
+        {
+          props.characters.map((character, i) => <CharacterCard key={character + i} character={character}/>)
+        }
+      </div>
+    </section>
+  ); 
 }
