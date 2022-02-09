@@ -14,6 +14,7 @@
   box-sizing: border-box;
   font-family: 'Barlow Semi Condensed', sans-serif;
   letter-spacing: .15rem;
+  text-decoration: none;
 }
 
 body{
@@ -86,11 +87,11 @@ button:hover{
   color: white;
 }
 
-.display-case{
-  background-color: var(--dark-blue);
-  width: 80%;
-  height: 100%;
-  padding: 50px;
+.search{
+  margin-left: 50px;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 10px;
 }
 
 .the-great-hall-of-the-justice-league{
@@ -98,9 +99,121 @@ button:hover{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(-225deg, var(--light-blue) 0%, var(--red) 100%);
+  background-image: linear-gradient(90deg, var(--light-blue) 0%, var(--red) 100%);
+}
+
+.display-case{
+  background-color: var(--dark-blue);
+  width: 80%;
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap:50px;
+}
+
+.character-card{
+  background-color: var(--gold);
+  width: 200px;
+  /* height: 350px;; */
+  padding: 10px;
+  border: 8px solid var(--bronze);
+  border-radius: 5px;
+}
+
+.character-card img{
+  border: 1px solid var(--dark-blue);
+  border-radius: 5px;
 }
 
 .character-name{
-  color:(--gold);
+  font-size: 1.35rem;
+  color: var(--dark-blue);
+  text-transform: uppercase;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+.publisher{
+  margin-bottom: 10px;
+}
+
+.detail-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-card{
+  margin-top: 50px;
+  padding: 20px;
+  width: 900px;
+  display: flex;
+  gap: 20px;
+  /* height: 550px; */
+  background-color: var(--bronze);
+  border-radius: 5px;
+}
+
+.detail-card img{
+  border: 1px solid var(--dark-blue);
+  border-radius: 5px;
+}
+
+.right-detail{
+  width: 100%;
+  height: 100%;
+}
+
+.detail-name{
+  font-size: 3rem;
+}
+
+.descriptor{
+  font-weight: 800;
+}
+
+.stat{
+  font-weight: 500;
+}
+
+.physiology{
+  margin-top: 20px;
+  display: flex;
+  column-gap: 20px;
+  row-gap: 5px;
+  flex-wrap: wrap;
+}
+
+.line{
+  margin-top: 20px;
+  background-color: var(--dark-blue);
+  height: 2px;
+  width: 100%;
+}
+
+.ability-div{
+  display: flex;
+}
+
+.stats{
+  width: auto;
+  background-color: var(--dark-blue);
+  color: var(--bronze);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 175px;
+}
+
+.biography{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
