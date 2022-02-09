@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 
 export default function CharacterCard({ character }){
-  console.log(character);
 
   return <Link to={`/CharacterDetail/${character.id}`} > 
     <div className='character-card'>

@@ -1,7 +1,6 @@
 import { client, checkError } from './client';
 
 export async function getCharacters(from = 1, to = 30, search) {
-
   if (!search){
     const response = await client
       .from(`characters`)
