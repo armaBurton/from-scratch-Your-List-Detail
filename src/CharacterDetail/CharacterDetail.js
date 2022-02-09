@@ -15,8 +15,6 @@ export default function CharacterDetail(){
     onLoad();
   }, [params]);
 
-  console.log(characterCard);
-
   return <Link to='/'>
     <div className='detail-container'>
       <div className="detail-card">
