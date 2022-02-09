@@ -24,6 +24,7 @@ function App() {
 
       const data = await getCharacters(from, to, search);
 
+      setQuery('');
       setCharacters(data);
     }
 
