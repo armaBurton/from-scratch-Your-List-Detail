@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('home', async () => {
+test('search', async () => {
   render(<App />);
-  const linkElement = await screen.findByText(/home/i);
+  const linkElement = await screen.findByText(/search/i);
   expect(linkElement).toBeInTheDocument();
 });
